@@ -14,7 +14,13 @@ export default function App() {
       <Stack.Navigator initialRouteName="MyContact">
         <Stack.Screen name="MyContact" component={MyContact} />
         <Stack.Screen name="CreateContact" component={CreateContact} />
-        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+          options={{
+            headerShown: false,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
